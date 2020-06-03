@@ -1,0 +1,51 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "node": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "globals": {
+        "React": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "plugins": ["react", "react-hooks", "class-property", "prettier"],
+    "settings": {
+        "react": {
+            "createClass": "createReactClass",
+            "pragma": "React",
+            "version": "detect",
+            "flowVersion": "0.53"
+        }
+    },
+    "rules": {
+        "strict": 0,
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "react/jsx-indent": ["error", 4],
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-no-undef": "off",
+        "react/jsx-filename-extension": "off",
+        "no-console": "off",
+        "react/no-direct-mutation-state": "off",
+        "react/no-find-dom-node": "off",
+        "no-async-promise-executor": "off",
+        "require-atomic-updates": "off",
+        "no-case-declarations": "off",
+        "react-hooks/rules-of-hooks": "warn",
+        "react-hooks/exhaustive-deps": "warn"
+    }
+}
